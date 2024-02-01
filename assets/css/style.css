@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Indie+Flower&family=Lobster&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: rgb(240, 253, 255);
+  filter: drop-shadow(0px 5px 15px #cabe15);
+  font-family: "Black Ops One", system-ui;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(45deg, #160227, #a7008b);
+}
+body .calculator {
+  border: 4px solid #be5a07;
+  padding: 20px;
+  border-radius: 16px;
+  background: transparent;
+  box-shadow: 0px 3px 15px rgba(255, 255, 255, 0.5);
+}
+@media (max-width: 991px) {
+  body .calculator {
+    padding: 10px;
+  }
+}
+@media (max-width: 576px) {
+  body .calculator {
+    padding: 3px;
+  }
+}
+body .calculator input {
+  width: 320px;
+  border: none;
+  padding: 24px;
+  margin: 10px;
+  background: linear-gradient(45deg, #39004b, #a7008b);
+  box-shadow: 0px 3px 15px rgba(84, 84, 84, 0.1);
+  font-size: 50px;
+  text-align: right;
+  border-radius: 15px;
+  cursor: pointer;
+  color: #fafafa;
+}
+@media (max-width: 991px) {
+  body .calculator input {
+    width: 300px;
+    margin: 15px;
+  }
+}
+body .calculator input input::-moz-placeholder {
+  color: #fdfdfd;
+}
+body .calculator input input::placeholder {
+  color: #fdfdfd;
+}
+body .calculator button {
+  border: none;
+  width: 60px;
+  height: 60px;
+  margin: 10px;
+  border-radius: 50%;
+  background: transparent;
+  color: #ffffff;
+  font-size: 20px;
+  box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+}
+body .calculator button.equalBtn {
+  background-color: #64009e;
+}
+body .calculator button.operator {
+  color: #5ad2f7;
+}/*# sourceMappingURL=style.css.map */
